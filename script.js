@@ -22,12 +22,12 @@ async function fetchRandomPoetry() {
     try {
         const response = await fetch('https://poetrydb.org/random');
         const data = await response.json();
-        const poetryText = data[0].lines.join(' — ');
+        const poetryText = data[0].lines.join(' ');
         const poetryTextElement = document.getElementById('poem');
-        poetryTextElement.innerText = poetryText;
+        poetryTextElement.innerText = str.toUpperCase(poetryText);
         const textLength = poetryText.length;
         console.log("Poem of length "  + textLength +" loaded:\n:" + poetryText)
-        const scrollDuration = Math.max(10, textLength / 40); 
+        const scrollDuration = Math.max(10, textLength / 20); 
         poetryTextElement.style.animationDuration = `${scrollDuration}s`;
     } catch (error) {
         console.error("Error fetching poetry:", error);
