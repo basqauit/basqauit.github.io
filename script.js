@@ -19,4 +19,4 @@ async function fetchImages() {
     }
 }
 
-window.onload = fetchImages;
+document.addEventListener('DOMContentLoaded', fetchImages);
