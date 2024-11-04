@@ -23,7 +23,11 @@ async function fetchRandomPoetry() {
         const response = await fetch('https://poetrydb.org/random');
         const data = await response.json();
         const poetryText = data[0].lines.join(' — ');
-        document.getElementById('poem').innerText = poetryText;
+        const poetryTextElement = document.getElementById('poem');
+        poetryTextElement.innerText = poetryText;
+        const textLength = poetryText.length;
+        const scrollDuration = Math.max(10, textLength / 10); 
+        poetryTextElement.style.animationDuration = `${scrollDuration}s`;
     } catch (error) {
         console.error("Error fetching poetry:", error);
         document.getElementById('poem').innerText = "Failed to fetch poetry.";

@@ -1,4 +1,7 @@
-body{font-family:Arial;}
+body{
+    font-family:Arial;
+    margin: 0;
+}
 h1 {
     text-align: center;
 }
@@ -26,18 +29,16 @@ h1 {
     right: 0;
     background-color: #333;
     color: white;
-    padding: 30;
+    padding: 10px;
     height: 40px;
     white-space: nowrap;
     overflow: hidden;
     z-index: 1000;
-    display: flex;
-    align-items: right;
 }
 
 #poem {
     display: inline-block;
-    animation: scroll 20s linear infinite;
+    animation: scroll linear infinite;
 }
 
 @keyframes scroll {
