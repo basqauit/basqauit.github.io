@@ -1,6 +1,7 @@
 body{
     font-family:Arial;
     margin: 0;
+    overflow-x: hidden;
 }
 h1 {
     text-align: center;
@@ -12,6 +13,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .image-grid img {
@@ -22,9 +25,10 @@ h1 {
 }
 .image-grid img:hover {
     transform: scale(1.25);
+    z-index: 3
 }
 .poetry {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: -10;
@@ -35,12 +39,14 @@ h1 {
     height: 40px;
     white-space: nowrap;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 1;
 }
 
 #poem {
     display: inline-block;
     animation: scroll linear infinite;
+    font-size: 20px;
+    font-family: "VT323", monospace;
 }
 
 @keyframes scroll {
