@@ -1,14 +1,13 @@
 body {
     font-family: Arial;
     margin: 0;
-    padding: 20px
 }
 h1 {
     text-align: center;
 }
 
 .image-grid {
-    margin-top: 100px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
@@ -30,7 +29,7 @@ h1 {
     right: 0;
     background-color: #333;
     color: white;
-    padding: 0;
+    padding: 30;
     white-space: nowrap;
     overflow: hidden;
     z-index: 1000;
@@ -40,7 +39,7 @@ h1 {
 
 #poem {
     display: inline-block;
-    animation: scroll 10s linear infinite;
+    animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll {
@@ -48,6 +47,6 @@ h1 {
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-110%);
+        transform: translateX(-100%);
     }
 }
