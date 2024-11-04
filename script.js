@@ -26,7 +26,8 @@ async function fetchRandomPoetry() {
         const poetryTextElement = document.getElementById('poem');
         poetryTextElement.innerText = poetryText;
         const textLength = poetryText.length;
-        const scrollDuration = Math.max(30, textLength / 10); 
+        console.log("Poem of length "  + textLength +" loaded:\n:" + poetryText)
+        const scrollDuration = Math.max(10, textLength / 10); 
         poetryTextElement.style.animationDuration = `${scrollDuration}s`;
     } catch (error) {
         console.error("Error fetching poetry:", error);
