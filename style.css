@@ -9,16 +9,24 @@ h1 {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
+    width: 100%;
+}
+
+.image-grid .image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* This creates a square aspect ratio */
+    overflow: hidden; /* Prevents overflow from image */
 }
 
 .image-grid img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 3px;
-    transition: transform .2s;
-}
-.image-grid img:hover {
-    transform: scale(1.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio and fills the container */
+    border-radius: 8px;
 }
