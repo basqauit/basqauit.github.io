@@ -24,7 +24,7 @@ async function fetchRandomPoetry() {
         const data = await response.json();
         const poetryText = data[0].lines.join(' / ');
         const poetryTextElement = document.getElementById('poem');
-        poetryTextElement.innerText = str.toUpperCase(poetryText);
+        poetryTextElement.innerText = string.toUpperCase(poetryText);
         const textLength = poetryText.length;
         console.log("Poem of length "  + textLength +" loaded:\n:" + poetryText)
         const scrollDuration = Math.max(10, textLength / 20); 
