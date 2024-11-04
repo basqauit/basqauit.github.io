@@ -22,7 +22,7 @@ async function fetchRandomPoetry() {
     try {
         const response = await fetch('https://poetrydb.org/random');
         const data = await response.json();
-        const poetryText = data[0].lines.join(' ');
+        const poetryText = data[0].lines.join(' / ');
         const poetryTextElement = document.getElementById('poem');
         poetryTextElement.innerText = str.toUpperCase(poetryText);
         const textLength = poetryText.length;
