@@ -17,11 +17,10 @@ h1 {
     width: 100%; 
     height: auto; 
     border-radius: 5px;
-    min-height: 200px;
     transition: transform .2s;
 }
 .image-grid img:hover {
-    transform: scale(1.75);
+    transform: scale(1.25);
 }
 .poetry {
     position: sticky;
