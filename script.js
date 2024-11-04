@@ -31,4 +31,4 @@ async function fetchRandomPoetry() {
 }
 
 document.addEventListener('DOMContentLoaded', fetchImages);
-document.addEventListener('DOMContentLoaded', fetchRandomPoetry)
+window.onload = fetchRandomPoetry;
