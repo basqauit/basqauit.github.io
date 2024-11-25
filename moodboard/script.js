@@ -1,4 +1,4 @@
-const repoURL = "https://api.github.com/repos/basqauit/basqauit.github.io/contents/images";
+const repoURL = "https://api.github.com/repos/basqauit/basqauit.github.io/contents/moodboard/images";
 
 async function fetchImages() {
     try {
