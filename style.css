@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+video{
+    left: -40px;
+}
+#bio {
+    padding: 10px;
+    width: 50%;
+}
+
+#container {
+width: 50%;
+margin: 20px auto;
+padding: 10px;
+border: 1px solid #ccc;
+background-color: black;
+}
+
+.file-box {
+margin: 10px 0;
+padding: 10px;
+border: 2px solid green;
+border-radius: 5px;
+background-color: black;
+}
+
+.file-name {
+font-size: 0.9em;
+color: #666;
+text-align: right;
+}
