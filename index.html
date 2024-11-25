@@ -8,13 +8,22 @@
         <title>D'Amaurie</title>
     </head>
     <body>
-        <div id="bio">
-            <video width="400" height="500" autoplay muted loop>
-                <source src="movie.mp4" type="video/mp4">
-              </video>
-            <p>Mark Nichols</p>
-        </div>
-        <div id="container">
+        <div class="row">
+            <div id="bio">
+                <div class="video">
+                    <video autoplay muted loop>
+                        <source src="movie.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="biography">
+                    <p style="font-size:40px;">Mark Nichols</p>
+                    <p>17 year old programmer, creative writer, eldest brother, theologian, fan of poetry, aspiring fashion merchandiser, loser.</p>
+
+                </div>
+            </div>
+
+            <div id="container"></div>
         </div>
         <script src="script.js"></script>
     </body>
